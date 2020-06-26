@@ -1,0 +1,40 @@
+<!-- Restaurant Menu Section -->
+{% load custom_template_tags %}
+<div id="restaurant-menu">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Menu</h2>
+    </div>
+    {% for row, value1 in menu_list.items %}
+      <div class="row">
+        {% for col in value1 %}
+          <div class="col-xs-12 col-sm-6">
+            {% for category, value2 in col.items %}
+              <div class="menu-section">
+                <h2 data-toggle="collapse" data-target="#menu{{ category|remove_white_space }}" class="menu-section-title">
+                  {{ category }}
+                </h2>
+                <div id="menu{{ category|remove_white_space }}" class="collapse">
+                  {% for sub_category, value3 in value2.items %}
+                    <div class="menu-item">
+                      {% if sub_category and sub_category != "others" %}
+                        <div class="menu-item-sub-category">{{ sub_category }}</div>
+                      {% endif %}
+                      {% for item in value3 %}
+                        <div class="menu-item-name">{{ item.name }}</div>
+                        <div class="menu-item-price"> ...{{ item.price }} &#8377; </div>
+                        {% if item.description %}
+                        <div class="menu-item-description">{{ item.description }}</div>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
