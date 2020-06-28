@@ -9,6 +9,7 @@ class RestaurantMenu(models.Model):
     is_veg = models.BooleanField(default=False)
     is_chef_special = models.BooleanField(default=False)
     description = models.TextField(blank=True)
+    image = models.ImageField(upload_to='images')
 
 
 class FoodCategory(models.Model):

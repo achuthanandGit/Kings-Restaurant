@@ -91,12 +91,5 @@ def arrange_food_menu(food_menu_list):
             )
     return resulatant_dic
 
-                
-def email():
-    subject = "Thank You"
-    message = "it means a world for us"
-    email_from = settings.EMAIL_HOST_USER
-    recipient_list = ['achuthanandv2@gmail.com']
-    send_mail(subject, message, email_from, recipient_list)
         
 

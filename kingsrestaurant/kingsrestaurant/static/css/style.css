@@ -329,7 +329,7 @@ header .intro-text {
 }
 /* Contact Section */
 #contact {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #333;
 }
 #contact .contact-item p {
@@ -418,7 +418,7 @@ color: #999;
 }
 .map-responsive {
     position: relative;
-    padding-bottom: 30%;
+	padding-bottom: 30%;
     height: 0;
     overflow: hidden;
 }
