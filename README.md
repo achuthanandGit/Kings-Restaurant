@@ -1,12 +1,6 @@
 # Kings-Restaurant
 This is a restaurant web application under development.
 
-Tech Stack Used as far:
-    1. Django 
-    2. Bootstrap
-    3. SQLite
-        Upgraded to postgresql
-
 
 Installing and configuring postgreSQL:
 
