@@ -2,11 +2,10 @@
 This is a restaurant web application under development.
 
 Tech Stack Used as far:
-
-1. Django 
-2. Bootstrap
-3. SQLite
-    Upgraded to postgresql
+    1. Django 
+    2. Bootstrap
+    3. SQLite
+        Upgraded to postgresql
 
 
 Installing and configuring postgreSQL:
@@ -30,9 +29,7 @@ Installing and configuring postgreSQL:
             ALTER ROLE kingsadmin timezone TO 'UTC';
 
             We are setting the default encoding to UTF-8, which Django expects.
-
             We are also setting the default transaction isolation scheme to “read committed”, which blocks reads from uncommitted transactions.
-
             Lastly, we are setting the timezone by default, our Django projects will be set to use UTC.These are essential parameters recommended by the official Django team.
         d. Granting permission to the user
             GRABT ALL PRIVILEGES ON DATABASE kingsdb TO kingsadmin;
