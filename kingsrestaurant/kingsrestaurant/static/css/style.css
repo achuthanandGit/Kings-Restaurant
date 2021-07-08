@@ -461,3 +461,29 @@ color: #999;
 #footer a:hover {
 	color: #eee;
 }
+
+/* Order online section */
+#order-online {
+	padding: 100px 0 60px 0;
+}
+#order-online h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+#order-online button {
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 2px #999;
+}
+#order-online button:hover {background-color: #3e8e41}
+
+#order-online button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}

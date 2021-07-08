@@ -18,3 +18,6 @@ def home(request):
         "special_menu_list": special_menu_list,
     }
     return render(request, template, context)
+
+def customer_order(request):
+    return render(request, 'kingsres/order.html', {})
